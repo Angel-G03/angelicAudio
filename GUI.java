@@ -46,7 +46,7 @@ public class GUI implements ActionListener {
 		
 		//Title Label
 		JLabel titleLabel = new JLabel();
-		ImageIcon titleImage = new ImageIcon("Angelic Audio.png");
+		ImageIcon titleImage = new ImageIcon("images/Angelic Audio.png");
 		titleLabel.setIcon(titleImage);
 		titleLabel.setBounds(150,20,600,150);
 		panel.add(titleLabel);
@@ -60,11 +60,11 @@ public class GUI implements ActionListener {
 		panel.add(label);
 		
 		//Album cover 1
-		deathCover = new ImageIcon("DeathAlbumCover 2.png");
+		deathCover = new ImageIcon("images/DeathAlbumCover 2.png");
 		label.setIcon(deathCover);
 		
 		//Song 1
-		deathFile = new File("SpiritualHealing.wav");
+		deathFile = new File("music/SpiritualHealing.wav");
 		audioStream = AudioSystem.getAudioInputStream(deathFile);
 		clip = AudioSystem.getClip();
 		clip.open(audioStream);
@@ -128,9 +128,9 @@ public class GUI implements ActionListener {
         	switch(count) {
 				//Song 1
         	    case 0: label.setText("Spiritual Healing - Death - Song 1");
-        	    ImageIcon cover = new ImageIcon("DeathAlbumCover 2.png");
+        	    ImageIcon cover = new ImageIcon("images/DeathAlbumCover 2.png");
         	    label.setIcon(cover);
-        	    File dethFile = new File("SpiritualHealing.wav");
+        	    File dethFile = new File("music/SpiritualHealing.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(dethFile);
 				} catch (UnsupportedAudioFileException | IOException e2) {					
@@ -152,9 +152,9 @@ public class GUI implements ActionListener {
         	
 				//Song 2
         	    case 1: label.setText("Stayin' Alive - Bee Gees - Song 2");
-        	    ImageIcon funkCover = new ImageIcon("cover2.png");
+        	    ImageIcon funkCover = new ImageIcon("images/cover2.png");
         	    label.setIcon(funkCover);
-        	    File funkFile = new File("Stayin' Alive.wav");
+        	    File funkFile = new File("music/Stayin' Alive.wav");
         	    //No idea what this is but it doesn't work without it
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(funkFile);
@@ -178,9 +178,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 3
         	    case 2: label.setText("Spring - Vivaldi - Song 3");
-        	    ImageIcon classCover = new ImageIcon("vivaldi.png");
+        	    ImageIcon classCover = new ImageIcon("images/vivaldi.png");
         	    label.setIcon(classCover);
-        	    File classFile = new File("vivaldi.wav");
+        	    File classFile = new File("music/vivaldi.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(classFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -206,9 +206,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 4
         	    case 3: label.setText("Dirty Deeds - AC/DC - Song 4");
-        	    ImageIcon rockCover = new ImageIcon("acdc.png");
+        	    ImageIcon rockCover = new ImageIcon("images/acdc.png");
         	    label.setIcon(rockCover);
-        	    File rockFile = new File("acdc.wav");
+        	    File rockFile = new File("music/acdc.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(rockFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -231,9 +231,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 5
         	    case 4: label.setText("Smart Patrol - Devo - Song 5");
-        	    ImageIcon techCover = new ImageIcon("devo.png");
+        	    ImageIcon techCover = new ImageIcon("images/devo.png");
         	    label.setIcon(techCover);
-        	    File techFile = new File("devo.wav");
+        	    File techFile = new File("music/devo.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(techFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -256,9 +256,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 6
         	    case 5: label.setText("Just Lose It - Eminem - Song 6");
-        	    ImageIcon rapCover = new ImageIcon("em.png");
+        	    ImageIcon rapCover = new ImageIcon("images/em.png");
         	    label.setIcon(rapCover);
-        	    File rapFile = new File("em.wav");
+        	    File rapFile = new File("music/em.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(rapFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -297,9 +297,9 @@ public class GUI implements ActionListener {
         	switch(count) {
 				//Song 1
         	    case 0: label.setText("Spiritual Healing - Death - Song 1");
-        	    ImageIcon cover = new ImageIcon("DeathAlbumCover 2.png");
+        	    ImageIcon cover = new ImageIcon("images/DeathAlbumCover 2.png");
         	    label.setIcon(cover);
-        	    File dethFile = new File("SpiritualHealing.wav");
+        	    File dethFile = new File("music/SpiritualHealing.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(dethFile);
 				} catch (UnsupportedAudioFileException | IOException e2) {
@@ -321,9 +321,9 @@ public class GUI implements ActionListener {
         	
 				//Song 2
         	    case 1: label.setText("Stayin' Alive - Bee Gees - Song 2");
-        	    ImageIcon funkCover = new ImageIcon("cover2.png");
+        	    ImageIcon funkCover = new ImageIcon("images/cover2.png");
         	    label.setIcon(funkCover);
-        	    File funkFile = new File("Stayin' Alive.wav");
+        	    File funkFile = new File("music/Stayin' Alive.wav");
         	    //No idea what this is but it doesn't work without it
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(funkFile);
@@ -344,9 +344,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 3
         	    case 2: label.setText("Spring - Vivaldi - Song 3");
-        	    ImageIcon classCover = new ImageIcon("vivaldi.png");
+        	    ImageIcon classCover = new ImageIcon("images/vivaldi.png");
         	    label.setIcon(classCover);
-        	    File classFile = new File("vivaldi.wav");
+        	    File classFile = new File("music/vivaldi.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(classFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -370,9 +370,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 4
         	    case 3: label.setText("Dirty Deeds - AC/DC - Song 4");
-        	    ImageIcon rockCover = new ImageIcon("acdc.png");
+        	    ImageIcon rockCover = new ImageIcon("images/acdc.png");
         	    label.setIcon(rockCover);
-        	    File rockFile = new File("acdc.wav");
+        	    File rockFile = new File("music/acdc.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(rockFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -392,9 +392,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 5
         	    case 4: label.setText("Smart Patrol - Devo - Song 5");
-        	    ImageIcon techCover = new ImageIcon("devo.png");
+        	    ImageIcon techCover = new ImageIcon("images/devo.png");
         	    label.setIcon(techCover);
-        	    File techFile = new File("devo.wav");
+        	    File techFile = new File("music/devo.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(techFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
@@ -414,9 +414,9 @@ public class GUI implements ActionListener {
         	    
 				//Song 6
         	    case 5: label.setText("Just Lose It - Eminem - Song 6");
-        	    ImageIcon rapCover = new ImageIcon("em.png");
+        	    ImageIcon rapCover = new ImageIcon("images/em.png");
         	    label.setIcon(rapCover);
-        	    File rapFile = new File("em.wav");
+        	    File rapFile = new File("music/em.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(rapFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
