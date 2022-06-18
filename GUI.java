@@ -30,7 +30,6 @@ public class GUI implements ActionListener {
 	protected static JLabel label;
 	protected static ImageIcon deathCover;
 	protected static int count = 0;
-	
 
 	public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 	
@@ -119,14 +118,14 @@ public class GUI implements ActionListener {
 			clip.stop();
 		}
 		//User restarts song
-        	else if (event == resetButton) {
+        else if (event == resetButton) {
 			clip.setMicrosecondPosition(0);
 		}
 		//User picks next song
-        	else if (event == nextButton) {
+        else if (event == nextButton) {
         	clip.close();
         	switch(count) {
-		    //Song 1
+		        //Song 1
         	    case 0: label.setText("Spiritual Healing - Death - Song 1");
         	    ImageIcon cover = new ImageIcon("images/DeathAlbumCover 2.png");
         	    label.setIcon(cover);
