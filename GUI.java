@@ -108,7 +108,7 @@ public class GUI implements ActionListener {
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e) {    
 		Object event = e.getSource();
 		//User clicks play
 		if (event == playButton) {
@@ -119,35 +119,35 @@ public class GUI implements ActionListener {
 			clip.stop();
 		}
 		//User restarts song
-        else if (event == resetButton) {
+        	else if (event == resetButton) {
 			clip.setMicrosecondPosition(0);
 		}
 		//User picks next song
-        else if (event == nextButton) {
+        	else if (event == nextButton) {
         	clip.close();
         	switch(count) {
-				//Song 1
+		    //Song 1
         	    case 0: label.setText("Spiritual Healing - Death - Song 1");
         	    ImageIcon cover = new ImageIcon("images/DeathAlbumCover 2.png");
         	    label.setIcon(cover);
         	    File dethFile = new File("music/SpiritualHealing.wav");
         	    try {
-					audioStream = AudioSystem.getAudioInputStream(dethFile);
-				} catch (UnsupportedAudioFileException | IOException e2) {					
+		        	audioStream = AudioSystem.getAudioInputStream(dethFile);
+		    	} catch (UnsupportedAudioFileException | IOException e2) {					
 					e2.printStackTrace();
-				}
+		    	}
         	    try {
 					clip = AudioSystem.getClip();
-				} catch (LineUnavailableException e2) {			
+		    	} catch (LineUnavailableException e2) {			
 					e2.printStackTrace();
-				}
+		   	    }
         	    try {
 					clip.open(audioStream);
-				} catch (LineUnavailableException e2) {				
+		    	} catch (LineUnavailableException e2) {				
 					e2.printStackTrace();
-				} catch (IOException e2) {
+		    	} catch (IOException e2) {
 					e2.printStackTrace();
-				}
+		        }
         	    break;
         	
 				//Song 2
@@ -158,20 +158,17 @@ public class GUI implements ActionListener {
         	    //No idea what this is but it doesn't work without it
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(funkFile);
-				} catch (UnsupportedAudioFileException | IOException e1) {
-					
+				} catch (UnsupportedAudioFileException | IOException e1) {	
 					e1.printStackTrace();
 				}
         	    try {
 					clip = AudioSystem.getClip();
 				} catch (LineUnavailableException e1) {
-					
 					e1.printStackTrace();
 				}
         	    try {
 					clip.open(audioStream);
 				} catch (LineUnavailableException | IOException e1) {
-					
 					e1.printStackTrace();
 				}
         	    break;
@@ -184,22 +181,18 @@ public class GUI implements ActionListener {
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(classFile);
 				} catch (UnsupportedAudioFileException | IOException e1) {
-					
 					e1.printStackTrace();
 				}
         	    try {
 					clip = AudioSystem.getClip();
 				} catch (LineUnavailableException e1) {
-					
 					e1.printStackTrace();
 				}
         	    try {
 					clip.open(audioStream);
 				} catch (LineUnavailableException e1) {
-					
 					e1.printStackTrace();
 				} catch (IOException e1) {
-					
 					e1.printStackTrace();
 				}
         	    break;
@@ -211,20 +204,17 @@ public class GUI implements ActionListener {
         	    File rockFile = new File("music/acdc.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(rockFile);
-				} catch (UnsupportedAudioFileException | IOException e1) {
-					
+				} catch (UnsupportedAudioFileException | IOException e1) {					
 					e1.printStackTrace();
 				}
         	    try {
 					clip = AudioSystem.getClip();
-				} catch (LineUnavailableException e1) {
-					
+				} catch (LineUnavailableException e1) {					
 					e1.printStackTrace();
 				}
         	    try {
 					clip.open(audioStream);
-				} catch (LineUnavailableException | IOException e1) {
-					
+				} catch (LineUnavailableException | IOException e1) {					
 					e1.printStackTrace();
 				}
         	    break;
@@ -236,20 +226,17 @@ public class GUI implements ActionListener {
         	    File techFile = new File("music/devo.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(techFile);
-				} catch (UnsupportedAudioFileException | IOException e1) {
-					
+				} catch (UnsupportedAudioFileException | IOException e1) {					
 					e1.printStackTrace();
 				}
         	    try {
 					clip = AudioSystem.getClip();
-				} catch (LineUnavailableException e1) {
-					
+				} catch (LineUnavailableException e1) {					
 					e1.printStackTrace();
 				}
         	    try {
 					clip.open(audioStream);
-				} catch (LineUnavailableException | IOException e1) {
-					
+				} catch (LineUnavailableException | IOException e1) {					
 					e1.printStackTrace();
 				}
         	    break;
@@ -261,14 +248,12 @@ public class GUI implements ActionListener {
         	    File rapFile = new File("music/em.wav");
         	    try {
 					audioStream = AudioSystem.getAudioInputStream(rapFile);
-				} catch (UnsupportedAudioFileException | IOException e1) {
-					
+				} catch (UnsupportedAudioFileException | IOException e1) {					
 					e1.printStackTrace();
 				}
         	    try {
 					clip = AudioSystem.getClip();
-				} catch (LineUnavailableException e1) {
-					
+				} catch (LineUnavailableException e1) {					
 					e1.printStackTrace();
 				}
         	    try {
@@ -276,8 +261,7 @@ public class GUI implements ActionListener {
 				} catch (LineUnavailableException e1) {
 					
 					e1.printStackTrace();
-				} catch (IOException e1) {
-					
+				} catch (IOException e1) {				
 					e1.printStackTrace();
 				}
         	    break;
